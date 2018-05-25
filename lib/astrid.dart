@@ -20,7 +20,7 @@ class Balance extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => new FetchWidget<AccountDetails>(
-      url: url,
+      url: url+publicKey,
       transform: _accountDetails,
       builder: (fetchPost) {
         return new Text('${fetchPost.data.balance}');
