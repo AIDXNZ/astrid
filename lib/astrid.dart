@@ -9,6 +9,8 @@ import 'package:http/http.dart' as http;
 
 // Widget to get the Balance from a given Public Key
 // Please refer to (https://www.stellar.org/developers/horizon/reference/endpoints/accounts-single.html)
+
+
 class Balance extends StatelessWidget {
   final String url;
   final String publicKey;
@@ -42,4 +44,5 @@ class AccountDetails {
   final balance;
   AccountDetails(this.balance);
 }
+
 
